@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('mahasiswa/pdf', [MahasiswaController::class, 'cetak_pdf']);
+// Route::get('mahasiswa/pdf', [MahasiswaController::class, 'cetak_pdf']);
 Route::resource('mahasiswa', MahasiswaController::class);

@@ -5,6 +5,8 @@
             {!! method_field('PUT') !!}
         Username <input type="text" name="username" required value="{{$data->username}}"><br>
         Nama <input type="text" name="nama" required value="{{$data->nama}}"><br>
+        Email <input type="email" name="email" required value="{{$data->email}}"><br>
+        Password <input type="password" name="password" required value="{{$data->password}}"><br>
 
 
         @if($data->avatar)
